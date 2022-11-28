@@ -63,9 +63,42 @@ body {
 }
 
 #header {
-    display: grid;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+    display: grid;
+}
+
+#upperHeader {
+    display: grid;
+    grid-template-columns: 2fr minmax(175px, 1fr);
+}
+
+#searchBar {
+    grid-column: 1 / 2;
+}
+
+#profile {
+    grid-column: 2 / 3;
+}
+
+#lowerHeader {
+    display: grid;
+    grid-template-columns: 3fr minmax(180px, 2fr);
+}
+
+#greeting {
+    grid-column: 1 / 2;
+}
+
+#quickLinks {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#quickLinks * {
+    grid-row: 2 / 3;
 }
 
 #main {
