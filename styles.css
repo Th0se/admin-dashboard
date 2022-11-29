@@ -98,6 +98,24 @@ body {
 
 #profile {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 2fr 3fr 9fr;
+}
+#profile > * {
+    grid-row: 2 / 3;
+}
+
+#notificationButton {
+    grid-column: 1 / 2;
+}
+
+#upperHeaderProfilePicture {
+    grid-column: 2 / 3;
+}
+
+#upperHeaderProfileName {
+    grid-column: 2 / 3;
 }
 
 #lowerHeader {
