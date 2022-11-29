@@ -66,6 +66,7 @@ body {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     display: grid;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 #upperHeader {
@@ -75,6 +76,24 @@ body {
 
 #searchBar {
     grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#searchIcon {
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+#searchEntry {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    box-sizing: border-box;
+    border: 2px solid black;
 }
 
 #profile {
