@@ -1,7 +1,8 @@
 body {
     display: grid;
     grid-template-columns: minmax(150px, 250px) 1fr;
-    grid-template-rows: 30px 1fr;
+    grid-template-rows: 130px 1fr;
+    background-color: rgb(4, 136, 4);
 }
 
 #sideBar {
@@ -9,7 +10,6 @@ body {
     grid-column: 1 / 2;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
-    background-color: rgb(4, 136, 4);
 }
 
 #home,
@@ -26,21 +26,28 @@ body {
 #header {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 30px;
+    grid-template-rows: 30px 100px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: rgba(255, 255, 255, 0.575);
 }
 
 #searchBar {
     display: grid;
     grid-template-columns: minmax(50px, 100px) 1fr;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 #searchEntry {
-    width: 100%;
+    width: 95%;
 }
 
 #action {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 #new,
@@ -50,4 +57,68 @@ body {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 30px;
     align-items: center;
+}
+
+#greeting {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns:  80px 1fr;
+    background-color: rgba(255, 255, 255, 0.575);
+    align-items: center;
+}
+
+#adminIcon {
+    grid-column: 1 / 2;
+}
+
+#rubbish {
+    grid-column: 2 / 3;
+    font-size: 1.25rem;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    margin-left: 10px;
+}
+
+#hello {
+    grid-row: 1 / 2;
+}
+
+#wellcome {
+    grid-row: 2 / 3;
+}
+
+#permission {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    background-color: rgba(255, 255, 255, 0.575);
+    border: 2px solid black;
+    text-align: center;
+}
+
+#permissionLevel {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#permissionDetail {
+    overflow: hidden;
+}
+
+#main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr minmax(150px, 250px);
+}
+
+#status {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.statusTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
