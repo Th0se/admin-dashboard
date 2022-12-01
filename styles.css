@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: minmax(150px, 250px) 1fr;
-    grid-template-rows: minmax(150px, 250px) 1fr;
+    grid-template-rows: 30px 1fr;
 }
 
 #sideBar {
@@ -20,5 +20,34 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     font-size: 2rem;
+    align-items: center;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 30px;
+}
+
+#searchBar {
+    display: grid;
+    grid-template-columns: minmax(50px, 100px) 1fr;
+}
+
+#searchEntry {
+    width: 100%;
+}
+
+#action {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+#new,
+#upload,
+#share {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 30px;
     align-items: center;
 }
