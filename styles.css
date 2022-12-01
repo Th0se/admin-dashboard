@@ -1,184 +1,24 @@
 body {
-    display:grid;
-    grid-template-columns: minmax(200px, 1fr) 3fr;
-    grid-template-rows: minmax(175px, 1fr) 3fr;
+    display: grid;
+    grid-template-columns: minmax(150px, 250px) 1fr;
+    grid-template-rows: minmax(150px, 250px) 1fr;
 }
 
-#sidebar {
-    display: grid;
-    grid-column: 1 / 2;
+#sideBar {
     grid-row: 1 / -1;
-    grid-template-rows: 165px 2fr 1fr;
-}
-
-#sidebarHeader {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-#sidebarHeaderLogo {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: rgb(4, 136, 4);
 }
 
-#sidebarHeaderName {
-    grid-column: 2 / -1;
-    grid-row: 2 / 3;
+#home,
+#history,
+#organisation,
+#tasks,
+#profiles {
     display: grid;
-    justify-content: start;
-    align-items: center;
+    grid-template-columns: 1fr 3fr;
     font-size: 2rem;
-}
-
-#sidebarNavigation,
-#sidebarControl {
-    display: grid;
-}
-
-#sidebarNavigation  *,
-#sidebarControl * {
-    border: none;
-    font-size: 1rem;
-}
-
-#sidebarNavigation > *,
-#sidebarControl > * {
-    display: grid;
-    grid-template-columns: 45px 1fr;
-}
-
-#sidebarNavigation > * > div:first-child,
-#sidebarControl > * > div:first-child {
-    background-color: purple;
-    height: 100%;
-    width: 100%;
-    grid-column: 1 / 2;
-}
-
-#sidebarNavigation > * > div:last-child,
-#sidebarControl > * > div:last-child{
-    grid-column: 2 / 3;
     align-items: center;
-}
-
-#header {
-    grid-column: 2 / -1;
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-}
-
-#upperHeader {
-    display: grid;
-    grid-template-columns: 2fr minmax(175px, 1fr);
-}
-
-#searchBar {
-    grid-column: 1 / 2;
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-#searchIcon {
-    height: 100%;
-    width: 100%;
-    background-color: purple;
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-}
-
-#searchEntry {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    box-sizing: border-box;
-    border: 2px solid black;
-}
-
-#profile {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 2fr 3fr 9fr;
-}
-#profile > * {
-    grid-row: 2 / 3;
-}
-
-#notificationButton {
-    grid-column: 1 / 2;
-}
-
-#upperHeaderProfilePicture {
-    grid-column: 2 / 3;
-}
-
-#upperHeaderProfileName {
-    grid-column: 2 / 3;
-}
-
-#lowerHeader {
-    display: grid;
-    grid-template-columns: 3fr minmax(180px, 2fr);
-}
-
-#greeting {
-    grid-column: 1 / 2;
-}
-
-#quickLinks {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-
-#quickLinks * {
-    grid-row: 2 / 3;
-}
-
-#main {
-    grid-column: 2 / -1;
-    grid-row: 2 / -1;
-    display: grid;
-    grid-template-columns: 3fr minmax(200px, 250px);
-    grid-template-rows: repeat(2, 1fr);
-    font-size: 1rem;
-}
-
-.mainHeader {
-display: flex;
-justify-content: center;
-font-weight: bold;
-}
-
-#content {
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
-}
-
-#contentDisplay {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
-}
-
-#announcement {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-#announcementDisplay {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-#trending {
-    grid-column: 2 / 3;
-    grid-row: 2 / 2;
-}
-
-#trendingDisplay {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
 }

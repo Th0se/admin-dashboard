@@ -1,212 +1,51 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="sidebar">
-        <div id="sidebarHeader">
-            <div id="sidebarHeaderLogo"></div>
-            <div id="sidebarHeaderName">
-                <p>Dashboard</p>
-            </div>
+    <div id="sideBar">
+        <div id="home">
+            <img src="icons/home-outline.svg" alt="Home icon" />
+            <p>Home</p>
         </div>
-        <div id="sidebarNavigation">
-            <button id="homeButton">
-                <div id="homeButtonLogo"></div>
-                <p>Home</p>
-            </button>   
-            <button id="ProfileButton">
-                <div id="profileButtonLogo"></div>
-                <p>Profile</p>
-            </button>
-            <button id="messagesButton">
-                <div id="messagesButtonLogo"></div>
-                <p>Messages</p>
-            </button>
-            <button id="historyButton">
-                <div id="historyButtonLogo"></div>
-                <p>History</p>
-            </button>
-            <button id="tasksButton">
-                <div id="tasksButtonLogo"></div>
-                <p>Tasks</p>
-            </button>
-            <button id="communitiesButton">
-                <div id="communitiesButtonLogo"></div>
-                <p>Comunities</p>
-            </button>
+        <div id="history">
+            <img src="icons/clock-time-five-outline.svg" alt="History icon in the shape of an analogue clock." />
+            <p>History</p>
         </div>
-        <div id="sidebarControl">
-            <button id="settingsButton">
-                <div id="settingsButtonLogo"></div>
-                <p>Settings</p>
-            </button>
-            <button id="supportButton">
-                <div id="supportButtonLogo"></div>
-                <p>Support</p>
-            </button>
-            <button id="privacyButton">
-                <div id="privacyButtonLogo"></div>
-                <p>Privacy</p>
-            </button>
+        <div id="organisation">
+            <img src="icons/family-tree.svg" alt="Organisaton icon in the shape of a tree diagram." />
+            <p>Organisation</p>
+        </div>
+        <div id="tasks">
+            <img src="icons/file-multiple-outline.svg" alt="Tasks icon in the shape of a stack of files" />
+            <p>Tasks</p>
+        </div>
+        <div id="profiles">
+            <img src="icons/badge-account-horizontal-outline.svg" alt="Profiles account in the shape of an identity tag" />
+            <p>Profiles</p>
         </div>
     </div>
     <div id="header">
-        <div id="upperHeader">
-            <div id="searchBar">
-                <button id="searchIcon"></button>
-                <input type="text" id="searchEntry" placeholder="seach" />
-            </div>
-            <div id="profile">
-                <div id="notificationButton"></div>
-                <div class="profilePicture" id="upperHeaderProfilePicture"></div>
-                <div class="profileName" id="upperHeaderProfilename"></div>
-            </div>
+        <div id="searchBar">
+            <button id="searchButton">Search</button>
+            <input type="search" placeholder="search query" id="searchEntry" />
         </div>
-        <div id="lowerHeader">
-            <div id="greeting">
-                <div class="profilePicture" id="LowerHeaderProfilePicture"></div>
-                <div id="addresses">
-                    <div id="hello">
-                        <p>Hello,</p>
-                    </div>
-                    <div class="profileName" id="lowerHeaderProfileName"></div>
-                </div>
-            </div>
-            <div id="quickLinks">
-                <button id="newButton">New</button>
-                <button id="uploadButton">Upload</button>
-                <button id="shareButton">Share</button>
-            </div>
+        <div id="action">
+            <button id="new">New</button>
+            <button id="upload">Upload</button>
+            <button id="share">Share</button>
         </div>
-    </div></div>
+    </div>
     <div id="main">
-        <div id="content">
-            <p class="mainHeader">Projects</p>
-            <div id="contentDisplay">
-                <!-- ToDo: complete the projectItem elements. -->
-                <div class="projectItem">
-                    <p class="projectItemTitle">Ruby</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                    <div class="projectItemFooter">
-                        <div class="start"></div>
-                        <div class="inspect"></div>
-                        <div class="share"></div>
-                    </div>
-                </div>
-                <div class="projectItem">
-                    <p class="projectItemTitle">Diamond</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                    <div class="projectItemFooter">
-                        <div class="start"></div>
-                        <div class="inspect"></div>
-                        <div class="share"></div>
-                    </div>
-                </div>
-                <div class="projectItem">
-                    <p class="projectItemTitle">Saphire</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                    <div class="projectItemFooter">
-                        <div class="start"></div>
-                        <div class="inspect"></div>
-                        <div class="share"></div>
-                    </div>
-                </div>
-                <div class="projectItem">
-                    <p class="projectItemTitle">Obsidian</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                    <div class="projectItemFooter">
-                        <div class="start"></div>
-                        <div class="inspect"></div>
-                        <div class="share"></div>
-                    </div>
-                </div>
-                <div class="projectItem">
-                    <p class="projectItemTitle">Silver</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                    <div class="projectItemFooter">
-                        <div class="start"></div>
-                        <div class="inspect"></div>
-                        <div class="share"></div>
-                    </div>
-                </div>
-                <div class="projectItem">
-                    <p class="projectItemTitle">Gold</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                    <div class="projectItemFooter">
-                        <div class="start"></div>
-                        <div class="inspect"></div>
-                        <div class="share"></div>
-                    </div>
-                </div>
-                <div class="projectItem">
-                    <p class="projectItemTitle">Iron</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                    <div class="projectItemFooter">
-                        <div class="start"></div>
-                        <div class="inspect"></div>
-                        <div class="share"></div>
-                    </div>
-                </div>
-                <div class="projectItem">
-                    <p class="projectItemTitle">Platinum</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                    <div class="projectItemFooter">
-                        <div class="start"></div>
-                        <div class="inspect"></div>
-                        <div class="share"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="announcement">
-            <p class="mainHeader">Announcement</p>
-            <div id="announcementDisplay">
-                <div class="announcementItem">
-                    <p class="announcementItemTitle">Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                </div>
-                <div class="announcementItem">
-                    <p class="announcementItemTitle">Road map</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                </div>
-                <div class="announcementItem">
-                    <p class="announcementItemTitle">Updated procedures</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque ullamcorper, maximus ante placerat.</p>
-                </div>
-            </div>
-        </div>
-        <div id="trending">
-            <p class="mainHeader">Trending</p>
-            <div id="TrendingDisplay">
-                <!-- ToDo: complete the trendingItem display-->
-                <div class="trendingItem">
-                    <div class="trendingItemImage"></div>
-                    <div>
-                        <div class="trendingItemId"></div>
-                        <div class="trendingItemStatus"></div>
-                    </div>
-                </div>
-                <div class="trendingItem">
-                    <div class="trendingItemImage"></div>
-                    <div>
-                        <div class="trendingItemId"></div>
-                        <div class="trendingItemStatus"></div>
-                    </div>
-                </div>
-                <div class="trendingItem">
-                    <div class="trendingItemImage"></div>
-                    <div>
-                        <div class="trendingItemId"></div>
-                        <div class="trendingItemStatus"></div>
-                    </div>
-                </div>
-            </div>
+        <div id="content"></div>
+        <div id="status">
+            <div id="announcement"><p>Announcement</p></div>
+            <div id="trending"><p>Trending</p></div>
         </div>
     </div>
 </body>
