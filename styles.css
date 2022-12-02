@@ -181,11 +181,7 @@ body {
 #trending > * {
     border-left: 5px solid black;
     border-bottom: 1px dashed black;
-}
-
-#announcement > *:last-child,
-#trending > *:last-child {
-    border-bottom: none;
+    border-top: 1px dashed black;
 }
 
 .announcementTitle,
